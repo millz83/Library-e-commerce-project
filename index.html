@@ -19,7 +19,28 @@
         <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
 </ul>
 </div>
+   <button class="btn__menu" ondblclick="openMenu()">
+    <i class="fas fa-bars"></i>
+   </button>
+   <div class="menu__backdrop">
+    <button class="btn__menu btn__menu--close" onClick="closeMenu()">
+    <i class="fas fa-times"></i>
+    </button>
+    <ul class="menu__links">
+        <li class="menu__list">
+        <a href="#">Home</a>
+       </li>
+         <li class="menu__list">
+        <a href="features">Books</a>
+        </li>
+         <li class="menu__list">
+        <a class="menu__link no-cursor">Contacts</a>
+        </li>
+    </ul>
+   </div>
+</div>
         </nav>
+        <header>
         <div class="header__container">
         <div class="header__description">
           <h1>America's most awarded online library platform</h1>
@@ -89,7 +110,7 @@
           <div class="books">
             <div class="book">
               <figure class="book__img--wrapper">
-                <img class="book__img" src="/assets/crack-the-coding-interview.jpeg"  alt= "">
+                <img class="book__img" src="./assets/crack-the-coding-interview.jpeg"  alt= "">
                  </figure>
             <div class="book__title">
                 Crack the Coding Interview
@@ -107,7 +128,7 @@
           </div>
         <div class="book">
               <figure class="book__img--wrapper">
-                <img class="book__img" src="/assets/atomic-habits.jpeg" alt="">
+                <img class="book__img" src="./assets/atomic-habits.jpeg" alt="">
               </figure>
               <div class="book__title">
                 Atomic Habits
@@ -173,6 +194,8 @@
                         Latest <span class="purple">Books</span>
                     </h2>
                     <div class="books">
+
+                        <!--BOOK 1-->
                         <div class="book">
                             <figure class="book__img--wrapper">
                                 <img class="book__img" src="./assets/book-1.jpeg" alt="">
@@ -187,15 +210,16 @@
                                <i class="fas fa-star"></i>
                                <i class="fas fa-star-half-alt"></i>
                            </div>
-                            </div>
+                     
 
                             <div class="book__price">
                                 <span class="book__price--normal">$59.95</span>$14.95
                             </div>
-                        </div>
+                           </div>
+                            <!--BOOK 2-->
                     <div class="book">
                         <figure class="book__image--wrapper">
-                            <img class="book__img" src="/assets/book-2.jpeg" alt="">
+                            <img class="book__img" src="./assets/book-2.jpeg" alt="">
                         </figure>
                         <div class="book__title">
                             Be Obsessed Or Be Average
@@ -211,9 +235,11 @@
                         <span class="book__price--normal">$59.95</span>$14.95
                     </div>
                     </div>
+
+                    <!--BOOK 3-->
                     <div class="book">
                         <figure class="book__img--wrapper">
-                            <img class="book__img" src="/assets/book-3.jpeg" alt="">
+                            <img class="book__img" src="./assets/book-3.jpeg" alt="">
                         </figure>
                         <div class="book__title">
                             Rich Dad Poor Dad
@@ -230,11 +256,13 @@
                             <span class="book__price--normal">$59.95</span>$14.95
                         </div>
                         </div>
+                        
+                        <!--!BOOK 4 -->
                         <div class="book">
                             <figure class="book__img--wrapper">
-                                <img class="book__img" src="/assets/book-4.jpeg" alt="">
+                                <img class="book__img" src="./assets/book-4.jpeg" alt="">
                                 </figure>
-                            </div class="book__title">
+                            <div class="book__title">
                             Cashflow Quadrant
                         </div>
                          <div class="book__ratings">
@@ -249,9 +277,11 @@
                         <span class="book__price--normal">$59.95</span>$14.95
                     </div>
                     </div>
+
+                    <!--BOOK 5-->
                     <div class="book">
                         <figure class="book__img-wrapper">
-                            <img class="book__img" src="/assets/book-5.jpeg" alt="">
+                            <img class="book__img" src="./assets/book-5.jpeg" alt="">
                         </figure>
                         <div class="book__title">
                             48 Laws of Power
@@ -268,9 +298,11 @@
                         <span class="book__price--normal">$59.95</span>$14.95
                     </div>
                     </div>
+                      
+                    <!--BOOK 6-->
                     <div class="book">
                         <figure class="book__image--wrapper">
-                            <img class="book__img" src="/assets/book-6.jpeg" alt="">
+                            <img class="book__img" src="./assets/book-6.jpeg" alt="">
                         </figure>
                         <div class="book__title">
                             The 5 Second rule
@@ -287,9 +319,11 @@
                     <span class="book__price--normal">$59.95</span>$14.95
                 </div>
                 </div>
+
+                <!--BOOK 7 -->
                 <div class="book">
                     <figure class="book__img--wrapper">
-                        <img class="book__img" src="/assets/book-7.jpg" alt="">
+                        <img class="book__img" src="./assets/book-7.jpg" alt="">
                     </figure>
                     <div class="book__title">
                         Your Next Five Moves
@@ -306,9 +340,11 @@
                         <span class="book__price--normal">$59.95</span>$14.95
                     </div>
                 </div>
+
+                <!--BOOK 8-->
                   <div class="book">
                     <figure class="book__image--wrapper">
-                        <img class="book__img" src="/assets/book-8.jpeg" alt="">
+                        <img class="book__img" src="./assets/book-8.jpeg" alt="">
                     </figure>
                     <div class="book__title">
                         Mastery
@@ -342,5 +378,24 @@
         </section>
      
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="row row__column">
+                <a href="#">
+                <figure class="footer__logo">
+                    <img src="./assets/Library.svg" class="footer__logo--img" alt="">
+                </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="" class="footer__link">Home</a>
+                    <a  class="footer__link no-cursor">About</a>
+                    <a href="#features" class="footer__link">Books</a>
+                    <a class="footer__link no-cursor">Contact</a>
+                </div>
+               <div class="footer__copyright">Copyright &copy; 2026 Library</div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
